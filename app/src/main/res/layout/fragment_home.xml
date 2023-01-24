@@ -12,7 +12,7 @@
         <EditText
             android:id="@+id/name"
             android:layout_width="350dp"
-            android:layout_height="55dp"
+            android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_field"
             android:drawableStart="@drawable/person"
