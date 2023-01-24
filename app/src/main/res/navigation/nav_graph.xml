@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.quizapptask.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.quizapptask.fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_difficultyFragment"
+            app:destination="@id/difficultyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/difficultyFragment"
+        android:name="com.example.quizapptask.fragment.DifficultyFragment"
+        android:label="fragment_difficulty"
+        tools:layout="@layout/fragment_difficulty" >
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_difficultyFragment_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/categoryFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.quizapptask.fragment.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="difficulty"
+            app:argType="string" />
+    </fragment>
+</navigation>
