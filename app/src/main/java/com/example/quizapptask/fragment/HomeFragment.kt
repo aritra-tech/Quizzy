@@ -19,6 +19,7 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(layoutInflater,container,false)
         binding.btnSave.setOnClickListener{
+
             findNavController().navigate(R.id.action_homeFragment_to_categoryFragment)
         }
         return binding.root

@@ -21,6 +21,7 @@ class CategoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
+
         binding = FragmentCategoryBinding.inflate(layoutInflater,container,false)
         options.add(0,binding.tvOptionAnimals)
         options.add(1,binding.tvOptionHistory)
@@ -74,7 +75,7 @@ class CategoryFragment : Fragment() {
             mSelectedOption = "General Knowledge"
             it.background = ContextCompat.getDrawable(
                 requireContext(),
-                R.drawable.cardview
+                R.drawable.selected_option
             )
         }
         return binding.root
