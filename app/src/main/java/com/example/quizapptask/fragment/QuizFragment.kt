@@ -172,10 +172,10 @@ class QuizFragment : Fragment() {
     private fun setQuestion(){
         defaultOptionView()
         if(mCurrentQuestion == mQuestionList.size){
-            binding.btDone.text = "FINISH"
+            binding.btDone.text = "Finish"
         }
         else{
-            binding.btDone.text = "SUBMIT"
+            binding.btDone.text = "Submit"
         }
         binding.tvQuestions.text = mQuestionList[mCurrentQuestion-1]
         binding.tvOption1.text = mOptionList[mCurrentQuestion-1][0]
