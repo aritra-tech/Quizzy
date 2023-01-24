@@ -48,7 +48,7 @@
             android:text="Your score is : "/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btDone"
+            android:id="@+id/btAgain"
             android:layout_width="330dp"
             android:layout_height="55dp"
             android:layout_marginBottom="192dp"
