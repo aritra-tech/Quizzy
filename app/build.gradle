@@ -57,4 +57,7 @@ dependencies {
 
     // View model
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+
+    // Lottie Animation
+    implementation 'com.airbnb.android:lottie:5.2.0'
 }
