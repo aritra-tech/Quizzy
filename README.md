@@ -9,6 +9,7 @@
     - [DataBinding](https://developer.android.com/topic/libraries/data-binding) - Binds data directly into XML layouts
 - [Retrofit](https://square.github.io/retrofit/) - Retrofit is type-safe REST client for Android and Java which aims to make it easier to consume RESTful web services.
 - [Navigation Component](https://developer.android.com/guide/navigation) - Navigation refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within your app.
+- [Trivia API](https://opentdb.com/api_config.php) - The Open Trivia Database provides a completely free JSON API for use in programming projects. Use of this API does not require a API Key, just generate the URL below use it in your own application to retrieve trivia questions.
 
 ## Architecture 👷‍♂️
 
