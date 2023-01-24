@@ -24,7 +24,7 @@ class ResultFragment : Fragment() {
         val correctAnswers = args.myargs
         binding.tvCorrectAnswers.text = "Your score is: $correctAnswers"
         binding.btAgain.setOnClickListener{
-            findNavController().navigate(R.id.action_resultFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_resultFragment_to_categoryFragment)
         }
         return binding.root
     }
